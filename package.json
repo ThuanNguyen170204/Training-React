@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "create-react": "^0.0.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.3.0"
+  }
+}

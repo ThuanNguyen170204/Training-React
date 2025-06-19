@@ -1,0 +1,505 @@
+.body-admin {
+  width: 100vw;
+  height: 100vh;
+  margin: 70px auto;
+}
+
+/* login */
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+
+.text-center-login {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 800;
+  margin: 0px 0px 30px 0px;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 80, 192);
+  border: 3px solid rgb(0, 80, 192);
+  padding: 40px;
+  font-family: Helvetica, sans-serif;
+}
+
+.login-row td {
+  padding-bottom: 25px;
+}
+
+.login-row td input {
+  width: 300px;
+  font-size: 15px;
+  padding: 12px 0px 12px 10px;
+  border: 1px solid rgb(0, 80, 192);
+  border-radius: 5px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+.btn-login {
+  background-color: rgb(0, 80, 192);
+  border: 2px solid rgb(0, 80, 192);
+  color: rgb(255, 255, 255);
+  font-weight: 550;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10pt;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 54, 130);
+}
+
+.btn-login-container {
+  text-align: right;
+}
+
+
+/* menu.css */
+div.border-bottom {
+  position: fixed; /* Makes the menu stay fixed */
+  top: 0; /* Positions it at the top */
+  width: 100%; /* Full width */
+  border-bottom: 1px solid rgb(0, 80, 192); /* Adds border below the menu */
+  padding: 20px 10px; /* Space within the menu */
+  background-color: rgb(230, 240, 255); /* Background color for the menu */
+  z-index: 1000; /* Ensures the menu stays on top of other elements */
+}
+
+
+div.menu-float-left {
+  font-size: 20px;
+  color: rgb(0, 80, 192);
+  float: left;
+  padding-left: 20px; /* Tạo khoảng cách bên trái */
+}
+
+div.menu-float-right {
+  float: right;
+  font-size: 15px;
+  color: rgb(0, 80, 192);
+  padding-right: 20px; /* Tạo khoảng cách bên phải */
+  margin: 5px 0; /* Tạo khoảng cách trên và dưới */
+}
+
+div.float-clear {
+  clear: both;
+}
+
+ul.menu {
+  margin: 0;
+  padding: 0;
+}
+
+li.menu {
+  display: inline-block; /* Điều chỉnh để các mục nằm ngang */
+  margin-right: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px; /* Thêm padding để dễ nhìn hơn */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+  border-radius: 5px; /* Tạo góc bo tròn */
+}
+
+li.menu:hover {
+  background-color: rgb(200, 220, 255); /* Thay đổi màu nền khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng mờ */
+  transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+li.menu a {
+  text-decoration: none;
+  color: rgb(0, 80, 192);
+  transition: color 0.1s ease;
+}
+
+li.menu a:hover {
+  color: rgb(0, 50, 120);
+}
+
+form.search {
+  margin: 0;
+  padding-top: 5px; /* Tạo khoảng cách phía trên */
+}
+
+input.keyword {
+  width: 120px;
+  padding: 8px; /* Tăng padding để thân thiện hơn khi nhập */
+  border: 1px solid rgb(0, 80, 192);
+  border-radius: 4px;
+  margin-left: 10px; /* Khoảng cách với các thành phần xung quanh */
+}
+
+span.hello-text{
+  font-weight: 500;
+}
+
+.btn-logout {
+  padding: 5px 10px;
+  border: 1px solid rgb(0, 80, 192);
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(0, 80, 192);
+  font-weight: 500;
+  background-color: transparent; /* Nền ban đầu */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+.btn-logout:hover {
+  background-color: rgb(200, 220, 255); /* Màu nền khi hover */
+  color: rgb(0, 50, 120); /* Thay đổi màu chữ khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm bóng mờ */
+  transform: scale(1.2);
+}
+
+
+/* Kiểu dáng cho toàn bộ bảng */
+table.datatable {
+  width: 90%;
+  border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+  margin: 20px auto;
+  font-size: 16px;
+  text-align: left;
+  background-color: rgb(230, 240, 255); /* Nền tổng thể nhẹ nhàng */
+}
+
+/* Kiểu tiêu đề bảng */
+table.datatable th {
+  background-color: rgb(0, 80, 192); /* Màu nền tiêu đề */
+  color: white; /* Màu chữ cho tiêu đề */
+  padding: 10px; /* Khoảng cách bên trong ô */
+  text-transform: uppercase; /* Chữ in hoa */
+  font-weight: bold;
+}
+
+/* Kiểu hàng trong bảng */
+table.datatable td {
+  padding: 8px; /* Tạo khoảng cách dễ nhìn */
+  border: 1px solid rgb(0, 80, 192); /* Viền ô */
+  color: rgb(0, 50, 120); /* Màu chữ ô */
+}
+
+/* Kiểu hàng khi hover */
+table.datatable tr:hover {
+  background-color: rgb(200, 220, 255); /* Nền nhấn khi hover */
+  cursor: pointer; /* Hiển thị con trỏ khi di chuột */
+}
+
+/* Kiểu dáng từng hàng riêng biệt */
+tr.datatable:nth-child(even) {
+  background-color: rgb(240, 248, 255); /* Xen kẽ màu hàng */
+}
+
+tr.datatable:nth-child(odd) {
+  background-color: rgb(255, 255, 255); /* Xen kẽ màu hàng */
+}
+
+/* Kiểu tiêu đề danh sách */
+h2.text-center {
+  color: rgb(0, 80, 192); /* Màu chữ cho tiêu đề */
+  text-align: center; /* Căn giữa */
+  font-size: 24px;
+  margin-bottom: 20px; /* Tạo khoảng cách bên dưới */
+}
+
+/* Dọn dẹp float */
+.float-clear {
+  clear: both;
+}
+
+/* Căn chỉnh toàn bộ container */
+.float-left {
+  padding: 10px;
+}
+
+
+/* Kiểu dáng tổng thể cho phần chi tiết */
+.float-right {
+  padding: 20px;
+  width: 45%;
+  background-color: rgb(230, 240, 255); /* Nền nhẹ */
+  border: 1px solid rgb(0, 80, 192);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Căn giữa theo chiều ngang */
+}
+
+h2.text-center {
+  color: rgb(0, 80, 192);
+  font-size: 22px;
+  text-align: center; /* Căn giữa tiêu đề */
+  margin-bottom: 20px;
+}
+
+
+/*product detail css*/
+.product-detail-container {
+  background-color: rgb(230, 240, 255); /* Primary background color */
+  color: rgb(0, 80, 192); /* Text color for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product-detail-container h2 {
+  color: rgb(0, 80, 192); /* Main heading color for readability */
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.product-detail-container form {
+  font-family: Arial, sans-serif;
+}
+
+.product-detail-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-detail-container td {
+  padding: 10px;
+  /* Border removed */
+}
+
+.product-detail-container input[type="text"],
+.product-detail-container input[type="file"],
+.product-detail-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(0, 80, 192);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.product-detail-container input[type="submit"] {
+  background-color: white;
+  color: rgb(0, 80, 192);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.product-detail-container input[type="submit"]:hover {
+  background-color: rgb(0, 80, 192);
+  color: aliceblue; /* Light hover effect */
+}
+
+.product-detail-container .image img {
+  margin-top: 20px;
+  border: 2px solid white;
+  background-color: rgb(253, 254, 255);
+}
+
+
+/*page css*/
+.pagination-container {
+  text-align: center; /* Centers the pagination links */
+  padding: 10px 0; /* Adds spacing above and below */
+  font-size: 16px; /* Sets a readable font size */
+  background-color: rgb(230, 240, 255); /* Adds a light background color */
+  border-top: 2px solid rgb(0, 80, 192); /* Creates a border on top to separate pagination */
+}
+
+.pagination-container span {
+  margin: 0 5px; /* Adds spacing between pagination links */
+  padding: 5px 10px; /* Adds internal padding */
+  border-radius: 5px; /* Smoothly rounds the edges */
+  font-size: 16px; /* Ensures consistency in font size */
+}
+
+.pagination-container span b {
+  background-color: rgb(0, 80, 192); /* Highlights current page background */
+  color: white; /* Sets text color for current page */
+  padding: 5px 10px;
+  border-radius: 5px; /* Smooth rounding for the selected page */
+  font-weight: bold; /* Emphasizes the current page */
+}
+
+.pagination-container span.link {
+  color: rgb(0, 80, 192); /* Sets the link text color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.pagination-container span.link:hover {
+  background-color: rgb(200, 220, 255); /* Adds hover background effect */
+  color: rgb(0, 50, 120); /* Changes text color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds hover shadow effect */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+/*category detail css*/
+.category-detail-container {
+  background-color: rgb(230, 240, 255); /* Primary background color */
+  color: rgb(0, 80, 192); /* Text color for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.category-detail-container h2 {
+  color: rgb(0, 80, 192); /* Heading color for readability */
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.category-detail-container form {
+  font-family: Arial, sans-serif;
+}
+
+.category-detail-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.category-detail-container td {
+  padding: 10px;
+  /* Table borders removed */
+}
+
+.category-detail-container input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(0, 80, 192); /* Subtle border for input */
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.category-detail-container input[type="submit"] {
+  background-color: white;
+  color: rgb(0, 80, 192);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.category-detail-container input[type="submit"]:hover {
+  background-color: rgb(0, 80, 192); /* Light hover effect */
+  color: aliceblue;
+}
+
+
+/*customer css*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Container for Customer List */
+.customer-list-container {
+  color: rgb(0, 80, 192);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.customer-header th,
+.order-header th,
+.order-detail-header th {
+  background-color: rgb(0, 80, 192);
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/* Rows in the table */
+.customer-row td,
+.order-row td,
+.order-detail-row td {
+  padding: 10px;
+  border: 1px solid rgb(0, 80, 192);
+  color: rgb(0, 50, 120);
+}
+
+/* Row hover effects */
+.customer-row:hover,
+.order-row:hover,
+.order-detail-row:hover {
+  background-color: rgb(200, 220, 255);
+  cursor: pointer;
+}
+
+/* Action Links */
+.action-link {
+  color: rgb(0, 80, 192);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-link:hover {
+  background-color: rgb(200, 220, 255);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Containers for Orders and Order Details */
+.order-list-container,
+.order-detail-container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+
+/*Home css*/
+.admin-home-container {
+  text-align: center; /* Centers all elements */
+  padding: 20px;
+  width: 90%; /* Limits container width */
+  margin: 0 auto; /* Centers the container horizontally */
+  color: rgb(0, 80, 192); /* Primary text color */
+  font-family: Arial, sans-serif; /* Clean font styling */
+}
+
+.admin-home-title {
+  font-size: 28px; /* Sets title size */
+  font-weight: bold;
+  margin-bottom: 20px; /* Adds spacing below the title */
+  text-transform: uppercase; /* Makes the title stand out */
+  color: rgb(0, 80, 192); /* Consistent text color */
+}
+
+.admin-home-container img {
+  border: 5px solid rgb(0, 80, 192); /* Adds a border around the image */
+  border-radius: 8px; /* Smoothly rounds the corners */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Adds shadow for emphasis */
+  max-width: 100%; /* Ensures responsiveness */
+  height: auto; /* Maintains the aspect ratio */
+  transition: transform 0.3s ease; /* Adds hover transition effect */
+}

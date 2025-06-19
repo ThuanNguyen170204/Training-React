@@ -1,0 +1,107 @@
+
+/* first home */
+.first-home{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	gap: 1px;
+	transition: 0.9s;	
+}
+.first-home li{
+	position: relative;
+	overflow: hidden;
+	flex: 30 10 80px;
+	border-radius: 50px;
+	cursor: pointer;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+}
+.first-home li img{
+	position: absolute;
+	translate: -50%, -50%;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	object-fit: cover;
+}
+.first-home li,
+.first-home li img{
+	transition: 0.3s;
+}
+.first-home li .content{
+	transition: 1.5s;
+}
+.first-home span{
+	text-align: center;
+	width: 75%;
+}
+.first-home h2{
+	font-weight: 100;
+	font-size: 20px;
+	line-height: 4px;
+	margin-bottom: 3px;
+	white-space: nowrap;
+	color: #fff;
+}
+.first-home p{
+	font-size: 10px;
+	color: #fff;
+	width: 100%;
+}
+.first-home li .content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	color: #fff;
+	padding: 15px;
+	background: 
+	linear-gradient(
+		0deg, rgb(0 0 0 / 75%) 10%,
+		rgb(255 255 255 / 0%) 100%
+	);
+	opacity: 0;
+	visibility: hidden;
+}
+.first-home:hover{
+	gap: 0;
+}
+.first-home li .content span{
+	position: absolute;
+	z-index: 3;
+	left: 50%;
+	bottom: 0px;
+	translate: -50%;
+	scale: 0.85;
+	visibility: hidden;
+	opacity: 0;
+}
+.first-home li:hover{
+	flex: 0 1 260px;
+	scale: 1.1;
+	z-index: 10;
+	opacity: 1;
+}
+.first-home li:hover .content{
+	opacity: 1;
+	visibility: visible;
+}
+.first-home li:hover .content span{
+	visibility: visible;
+	opacity: 1;
+	scale: 1;
+}
+@keyframes pulse {
+    0%, 100% {
+     transform: scale(1);
+    }
+    50% {
+     transform: scale(1.05);
+    }
+   }
+.pulse {
+    animation: pulse 2s infinite;
+   }
